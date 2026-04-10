@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.My_app时晴">
         <activity
-            android:name=".login"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".RegisterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
