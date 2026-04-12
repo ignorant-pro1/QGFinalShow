@@ -41,8 +41,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             boolean success = usersDao.register(username,password);
             if (success){
                 Toast.makeText(RegisterActivity.this,"登录成功！",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();//关闭登录页 这样用户点击返回不会退出到登录页面
             }else {
-                Toast.makeText(RegisterActivity.this,"登录失败！",Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this,"用户名或密码错误！",Toast.LENGTH_SHORT).show();
             }
         } else if (v.getId() == R.id.login) {
             boolean success = usersDao.login(username,password);
