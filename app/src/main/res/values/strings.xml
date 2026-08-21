@@ -6,4 +6,7 @@
     <string name="password_input">请输入您的密码</string>
     <string name="register">登录</string>
     <string name="login">注册</string>
+    <string name="app_unwelcome_title">欢迎来到应用！</string>
+    <string name="unwelcome_message">感谢您的使用，祝您一切顺利！</string>
+    <string name="btn_leave">立刻离开</string>
 </resources>
