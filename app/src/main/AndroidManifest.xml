@@ -15,13 +15,18 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".FinalMessageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true">
+            <!-- Removed LAUNCHER intent-filter as FinalMessageActivity is now the main launcher -->
         </activity>
     </application>
 
