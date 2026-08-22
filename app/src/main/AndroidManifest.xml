@@ -26,6 +26,9 @@
         <activity
             android:name=".UnwelcomeActivity"
             android:exported="false" />
+        <activity
+            android:name=".SimpleTextActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
